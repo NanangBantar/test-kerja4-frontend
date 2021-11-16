@@ -9,7 +9,7 @@ const ListFile = () => {
 
     const getAllFile = async () => {
         try {
-            const resp = await axios.get("http://localhost:5000/file/getallfile",
+            const resp = await axios.get("https://test-kerja4-backend.herokuapp.com/file/getallfile",
                 { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
             );
 
@@ -27,8 +27,8 @@ const ListFile = () => {
 
     return (
         <div className="block w-full overflow-x-auto p-6">
-            <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+            <div className="mb-4">
+                <label className="block text-gray-700 text-sm font-bold mb-2">
                     Username
                 </label>
                 <input onChange={(e) => setFilter(e.target.value)} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Search File" />

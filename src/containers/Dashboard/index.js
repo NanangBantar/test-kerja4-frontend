@@ -32,7 +32,7 @@ const Dashboard = () => {
 
     const getMainFile = async () => {
         try {
-            const resp = await axios.get("http://localhost:5000/file/getfile",
+            const resp = await axios.get("https://test-kerja4-backend.herokuapp.com/file/getfile",
                 { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } });
             setMainFile(resp.data);
         } catch (error) {

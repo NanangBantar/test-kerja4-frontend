@@ -11,7 +11,7 @@ const Logout = () => {
                         Logout your account
                     </p>
                     <p className="text-black-700 text-base my-4">
-                        <button onClick={() => LogoutAction(history)} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        <button onClick={() => LogoutAction(history)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                             Logout
                         </button>
                     </p>

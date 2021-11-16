@@ -5,7 +5,7 @@ const Profile = () => {
   const [User, setUser] = useState()
   const userData = async () => {
     try {
-      const resp = await axios.get("http://localhost:5000/user/getmydata",
+      const resp = await axios.get("https://test-kerja4-backend.herokuapp.com/user/getmydata",
         { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
       );
       setUser(resp.data);

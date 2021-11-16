@@ -2,7 +2,7 @@ import axios from "axios";
 
 const SubmitFunction = async (data, setAlert, { isEventTrigger, setIsEventTrigger } = {}) => {
     try {
-        const resp = await axios.post("http://localhost:5000/file/createfile",
+        const resp = await axios.post("https://test-kerja4-backend.herokuapp.com/file/createfile",
             data,
             { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
         );
