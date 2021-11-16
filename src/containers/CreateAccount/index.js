@@ -18,7 +18,7 @@ const CreateAccount = () => {
     };
 
     const getCountry = async () => {
-        const resp = await axios.get("http://localhost:5000/country/getcountry");
+        const resp = await axios.get("https://test-kerja4-backend.herokuapp.com/country/getcountry");
         setCountry(resp.data);
     }
 
